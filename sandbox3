@@ -1,23 +1,15 @@
-records= input ("Enter how many records?: ")
-title = input("Enter the book title: ")
-author = input("Enter the author's name: ")
-price = input("Enter the price of the book: ")
-stock_quantity = input("Enter the stock quantity: ")
-records= input ("Enter how many records?: ")
-title = input("Enter the book title: ")
-author = input("Enter the author's name: ")
-price = input("Enter the price of the book: ")
-stock_quantity = input("Enter the stock quantity: ")
-records= input ("Enter how many records?: ")
-title = input("Enter the book title: ")
-author = input("Enter the author's name: ")
-price = input("Enter the price of the book: ")
-stock_quantity = input("Enter the stock quantity: ")
+num_of_books = int(input("Enter the number of books: "))
 
+def my_function():
+    Title = input("Enter the title of book: ")
+    Author = input("Enter the author of book: ")
+    Price = input("Enter the price of book: ")
+    Stock = input("Enter the stock quantity for a book: ")
+    return {"Title": Title, "Author": Author, "Price": Price, "Stock": Stock}
 
-print("\n--- Book Details ---")
-print(f"Title: {title}")
-print(f"Author: {author}")
-print(f"Price: ${price}")
-print(f"Stock Quantity: {stock_quantity} units")
+books = []
+for i in range(num_of_books):
+    book_info = my_function()
+    books.append(book_info)
 
+print(books)
