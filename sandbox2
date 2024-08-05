@@ -1,0 +1,12 @@
+title = input("Enter the book title: ")
+author = input("Enter the author's name: ")
+price = input("Enter the price of the book: ")
+stock_quantity = input("Enter the stock quantity: ")
+purchase_quantity = input("Enter the purchase quantity: ")
+
+print("\n--- Book Details ---")
+print(f"Title: {title}")
+print(f"Author: {author}")
+print(f"Price: ${price}")
+print(f"Stock Quantity: {stock_quantity} units")
+print(f"Purchase Quantity: {purchase_quantity} units")o
